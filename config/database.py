@@ -7,8 +7,9 @@ try:
     cursor.execute("SELECT @@version;")
     row = cursor.fetchone()
     print("Versión del servidor de SQL Server: {}".format(row))
-    cursor.execute("SELECT * FROM product")
+    cursor.execute("SELECT 1+1")
     rows = cursor.fetchall()
+    print(rows)
     for row in rows:
         print(row)
 except Exception as ex:
