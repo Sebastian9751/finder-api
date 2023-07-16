@@ -1,7 +1,5 @@
 from fastapi import APIRouter
 from modules.products.get_products_dto import GetProducts
-
-
 from modules.products.product_service import getSimilarProducts
 
 product = APIRouter()
