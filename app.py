@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routes.products import product
+from modules.products.products_controller import product
 app = FastAPI()
 
 app.include_router(product)
