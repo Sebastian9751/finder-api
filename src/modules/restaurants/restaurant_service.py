@@ -1,8 +1,8 @@
 import pandas as pd
 from fuzzywuzzy import fuzz
 from unidecode import unidecode
-from config.database import engine
-from modules.restaurants.dto.find_restaurant_dto import FindReetaurant
+from src.config.database import engine
+from src.modules.restaurants.dto.find_restaurant_dto import FindReetaurant
 
 SIMILARITY_SCORE_VALUE = 37
 async def search_restaurant(rest: FindReetaurant):

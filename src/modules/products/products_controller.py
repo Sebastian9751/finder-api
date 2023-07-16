@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from modules.products.dto.find_product_dto import *
-from modules.products.product_service import *
+from src.modules.products.dto.find_product_dto import *
+from src.modules.products.product_service import *
 
 product = APIRouter()
 product = APIRouter(tags=["Products"], prefix="/product")

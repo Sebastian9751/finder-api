@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from modules.products.products_controller import product
-from modules.restaurants.restaurant_controller import restaurant
+from src.modules.products.products_controller import product
+from src.modules.restaurants.restaurant_controller import restaurant
 
 app = FastAPI(
     title="Finder-API",

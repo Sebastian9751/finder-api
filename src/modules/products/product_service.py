@@ -1,8 +1,8 @@
 import pandas as pd
 from fuzzywuzzy import fuzz
 from unidecode import unidecode
-from config.database import engine
-from modules.products.dto.find_product_dto import *
+from src.config.database import engine
+from src.modules.products.dto.find_product_dto import *
 
 PAGE_SIZE = 19
 SIMILARITY_SCORE_VALUE = 37

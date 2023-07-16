@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from modules.restaurants.dto.find_restaurant_dto import *
-from modules.restaurants.restaurant_service import search_restaurant
+from src.modules.restaurants.dto.find_restaurant_dto import *
+from src.modules.restaurants.restaurant_service import search_restaurant
 restaurant = APIRouter()
 restaurant = APIRouter(tags=["Restaurants"], prefix="/restaurant")
 
