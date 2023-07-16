@@ -5,7 +5,7 @@ from config.database import engine
 from modules.products.dto.find_product_dto import *
 
 PAGE_SIZE = 19
-
+SIMILARITY_SCORE_VALUE = 37
 
 def create_product_dict(row):
     return {
@@ -38,7 +38,7 @@ async def getSimilarProducts(name_product: FindProduct) -> GetResponse:
         similarity_score = fuzz.token_set_ratio(
             name_product_normalized, row_name_normalized
         )
-        if similarity_score >= 37:
+        if similarity_score >= SIMILARITY_SCORE_VALUE:
             product_dict = create_product_dict(row)
             restaurant_dict = create_restaurant_dict(row)
             product_with_restaurant_dict = {
