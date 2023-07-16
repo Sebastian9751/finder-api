@@ -1,4 +1,4 @@
 from pydantic import BaseModel
 
-class GetProducts(BaseModel):
+class FindProduct(BaseModel):
     name_product: str
