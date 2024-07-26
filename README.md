@@ -25,17 +25,14 @@ DB_NAME=
 ```bash
 $ pip install -r requirements.txt
 ```
-## Docker (recomended)
+## Running the Server
 
-#### Using docker-compose.yml
 
-#### Ensure that Docker is installed on your machine.
-
-#### Execute the following command to create a Docker container for MySQL server:
 
 ```bash
-# To build the application.
-
-$ docker-compose up
+# Start app
+ 
+$ uvicorn app:app --host 0.0.0.0 --port 8000
+ 
 ```
 
