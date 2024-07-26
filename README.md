@@ -2,7 +2,7 @@
 
 ![logo-teal](https://github.com/Sebastian9751/tramifast-api/assets/85807291/232a0041-1384-4988-8fd9-41903e5e11c2)
 
-#### This is a API that has been developed using  FastAPI.
+#### This is a API has been developed using  FastAPI.
 
 ## Configuration
 
